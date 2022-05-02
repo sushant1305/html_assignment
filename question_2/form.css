@@ -1,4 +1,3 @@
-/* Basic table setup */
 body {
   background: rgba(245, 245, 245);
   font-family: sans-serif;
@@ -8,38 +7,29 @@ h1 {
   font-weight: bold;
   text-align: left;
 }
-.accordion {
-  width: 800px;
-  margin: 90px auto;
-  color: black;
-  background-color: white;
-  padding: 45px 45px;
-}
-.accordion .label{
-  background-color: #3a3838;
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-  position: absolute;
-  right: 30%;
-  padding: 18px;
-  width: 40%;
+.form{
+  font: 1em;
+  width: 50%;
   text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
 }
-.accordion .container{
+
+input[type=text] {
   position: relative;
-  margin: 10px 10px;
+  margin: 0.5% auto; 
+  width: 300px; 
+  box-sizing: content-box;
 }
 
-
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: black;
-  display: none;
-  overflow: hidden;
+label{
+  display:inline-block;
+  width:200px;
+  margin-right:30px;
+  text-align:left;
+  }
+.dropdown {
+  width: 20%;
+  margin: 0 20%;
+  box-sizing: content-box;
+  display: inline-table;  
+  justify-content: center;
 }

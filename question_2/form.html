@@ -1,15 +1,15 @@
 <html>
 <head>
-	<link rel="stylesheet" href="Question2.css">
+	<link rel="stylesheet" href="form.css">
 </head>
 <body>
 <header>
 	
 </header>
-
+<div class="form">
 <form action="/submit-form" method="post">
 	<fieldset>
-		<h1>Test JavaScript Form Validation</h1>
+	  <h1>Test JavaScript Form Validation</h1>
 	  <label for="Name">Name*</label>
 	  <input type="text" id="name" name="name" required><br>
 	  
@@ -19,12 +19,14 @@
 	  <label for="zipcode">Zip Code*</label>
 	  <input type="text" id="zipcode" name="zipcode" required><br>
 	  
-	  <label for="country">Country*</label>
-	  <select id="groups" name="groups" >
+	  <label for="country">Country*</label> 
+	  <div class="dropdown">	
+	  	<select id="groups" name="groups" >
 		  <option>Australia</option>
 		  <option selected>India</option>
 		  <option>USA</option>
-	  </select><br>
+	  	</select><br>
+	  </div>
 
 	  
 	  <label for="gender">Gender*</label>
@@ -48,7 +50,7 @@
 	  <label for="verifypassword">Verify password*</label>
 	  <input type="password" id="password" name="password" required pattern=".{6,}"><br>
 	</fieldset>
-   
+</div>
 	
 	
 
