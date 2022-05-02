@@ -26,24 +26,10 @@ h1 {
     border-radius: 4px;
     cursor: pointer;
     position: relative;
-    text-align: left;
     transition: background 0.1s;
     padding: 20px 20px;
   } 
-  .question::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 20px;
-    width: 12px;
-    height: 6px;
-    transition: all 0.4s;
-  }
-/*
-This is for 1st icon*/
 
-/* This is for + sign */
   .question::before {
     content: "+";
     position: absolute;
@@ -55,12 +41,12 @@ This is for 1st icon*/
     background-size: contain;
     transition: transform 0.4s;
   }
-  .question::before {
-    content: "\25B6";
+
+  .question::after {
+    content: "\25b6";
     position: absolute;
     display: block;
-    top: 35%;
-    transform: translateY(0);
+    top: 40%;
     left: 20px;
     width: 12px;
     height: 6px;
@@ -77,10 +63,11 @@ This is for 1st icon*/
   }  
   .click:checked ~ .content {
     display: block;
-  }  
+  }
   .click:checked ~ .question::after {
     transform: rotate(90deg);
   }
+  
 .click:checked ~ .question::before {
   content: "-";
   position: absolute;
