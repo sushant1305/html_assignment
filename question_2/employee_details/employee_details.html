@@ -1,0 +1,76 @@
+<html>
+<head>
+	<link rel="stylesheet" href="form.css">
+	<script type="text/javascript" src="FormValidation.js"></script>
+</head>
+<body>
+	
+<div class="form">
+<form name="emp_details" id="emp_details_form" action="employee_db.php" method="post">
+	<fieldset>
+	  <h1>Test JavaScript Form Validation</h1>
+	<div class="name">
+	  <label for="Name">Name*</label>
+	  <input class="inputs" type="text" id="name" name="name" required>
+	  <span id=name_error></span><br>
+
+	</div>
+
+	  <label for="Address">Address</label>
+	  <input class="inputs" type="text" id="address" name="address"><br>
+	  
+	  <label for="zipcode">Zip Code*</label>
+	  <input class="inputs" type="text" id="zipcode" name="zipcode" required>
+	  <span id=zipcode_error></span><br>
+
+
+	  <label for="country">Country*</label> 
+	  <div class="dropdown">	
+	  	<select class="inputs" id="groups" name="groups" >
+		  <option selected>Please Select...</option>
+		  <option>Australia</option>
+		  <option>India</option>
+		  <option>USA</option>
+	  	</select><br>
+	  </div>
+
+	  <br>
+	  <label for="gender">Gender*</label>
+	  <input type="radio" name="gender" value="m" required> Male
+	  <input type="radio" name="gender" value="f"> Female <br>
+
+	  <label for="preferences">Gender*</label>
+	  <input class="inputs" type="checkbox" name="preferences" value="red"> Red
+	  <input class="inputs" type="checkbox" name="preferences" value="green"> Green
+	  <input class="inputs" type="checkbox" name="preferences" value="blue"> Blue <br>
+
+	  <label for="phone">Phone*</label>
+	  <input class="inputs" type="text" id="phone" name="phone">
+	  <span id=phone_error></span><br>
+
+	  <label for="email">Email*</label>
+	  <input class="inputs" type="text" id="email" name="email">
+	  <span id=email_error></span><br>
+
+	  <label for="password">password (6-8 characters)*</label>
+	  <input class="inputs" type="password" id="password" name="password" required pattern=".{6,}">
+	  <span id=password_error></span><br>
+	  
+	  <label for="verifypassword">Verify password*</label>
+	  <input class="inputs" type="password" id="verify_password" name="password" required pattern=".{6,}">
+	  <span id=verify_password_error></span><br>
+
+
+
+	  <button type="submit" id="send" >SEND</button>
+	  <button type="button" id="clear" onClick="clear_textbox()">CLEAR</button>
+
+	</fieldset>
+</div>
+
+	
+	
+
+</body>
+
+</html>
