@@ -24,6 +24,8 @@ h1 {
     display: block;
     color: #ffffff;
     border-radius: 4px;
+    font-size: 1.05em;
+    font-weight: bold;
     cursor: pointer;
     position: relative;
     transition: background 0.1s;
@@ -33,7 +35,7 @@ h1 {
   .question::before {
     content: "+";
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     right: 20px;
     width: 12px;
@@ -46,16 +48,16 @@ h1 {
     content: "\25b6";
     position: absolute;
     display: block;
-    top: 40%;
+    top: 38%;
     left: 20px;
     width: 12px;
     height: 6px;
     transition: all 0.4s;
   }
   .content {
-    background: lightgrey;
+    text-align: center;
     line-height: 1.6;
-    font-size: 0.85em;
+    font-size: 1em;
     display: none;
   }  
   .click {
@@ -71,7 +73,7 @@ h1 {
 .click:checked ~ .question::before {
   content: "-";
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 20px;
   width: 12px;
   height: 6px;
