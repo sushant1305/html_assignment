@@ -1,0 +1,45 @@
+/* Basic table setup */
+body {
+  background: rgba(245, 245, 245);
+  font-family: sans-serif;
+}
+h1 {
+  font: 2em Times;
+  font-weight: bold;
+  text-align: left;
+}
+.accordion {
+  width: 800px;
+  margin: 90px auto;
+  color: black;
+  background-color: white;
+  padding: 45px 45px;
+}
+.accordion .label{
+  background-color: #3a3838;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  right: 30%;
+  padding: 18px;
+  width: 40%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion .container{
+  position: relative;
+  margin: 10px 10px;
+}
+
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: black;
+  display: none;
+  overflow: hidden;
+}
