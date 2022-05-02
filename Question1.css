@@ -52,11 +52,20 @@ This is for 1st icon*/
     right: 20px;
     width: 12px;
     height: 6px;
-    /*background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');*/
-
     background-size: contain;
     transition: transform 0.4s;
-  }  
+  }
+  .question::before {
+    content: "\25B6";
+    position: absolute;
+    display: block;
+    top: 35%;
+    transform: translateY(0);
+    left: 20px;
+    width: 12px;
+    height: 6px;
+    transition: all 0.4s;
+  }
   .content {
     background: lightgrey;
     line-height: 1.6;
