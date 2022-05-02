@@ -1,0 +1,83 @@
+body {
+  background: rgba(245, 245, 245);
+  font-family: sans-serif;
+}
+h1 {
+  font: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+.accordion {
+  width: 800px;
+  margin: 90px auto;
+  color: black;
+  
+  padding: 20px 20px;
+}
+  .question,
+  .content {
+    padding: 20px 20px;
+  }  
+  .question {
+    padding: 20px 20px;
+    background-color: #3a3838;
+    display: block;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    transition: background 0.1s;
+    padding: 20px 20px;
+  } 
+  .question::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 20px;
+    width: 12px;
+    height: 6px;
+    transition: all 0.4s;
+  }
+/*
+This is for 1st icon*/
+
+/* This is for + sign */
+  .question::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    /*background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');*/
+
+    background-size: contain;
+    transition: transform 0.4s;
+  }  
+  .content {
+    background: lightgrey;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+  }  
+  .click {
+    display: none;
+  }  
+  .click:checked ~ .content {
+    display: block;
+  }  
+  .click:checked ~ .question::after {
+    transform: rotate(90deg);
+  }
+.click:checked ~ .question::before {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  background-size: contain;
+}
