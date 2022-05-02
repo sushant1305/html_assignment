@@ -38,8 +38,7 @@
                 echo "<td>" . $row['Password'] . "</td>";
                 echo "<td>" . $row['Email'] . "</td>";
                 echo "<td>" . $row['Country'] . "</td>";
-                echo "<td><a href=\"deleterow.php?id=".$row['Country']."\">delete</a></td>";
-                
+                echo "<td><a href=\"delete.php?id=".$row['Name']."\">delete</a></td>";
             echo "</tr>";
         }
         echo "</table>";
